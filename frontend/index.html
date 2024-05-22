@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-Movies Review</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- OWL CAROUSEL -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <!-- BOX ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="media.css" />
+
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <div class="nav-wrapper">
+      <div class="container">
+        <div class="nav">
+          <a href="#home" class="logo">
+            <i class="bx bx-movie-play bx-tada main-color"></i>G-<span
+              class="main-color"
+              >Movies</span
+            >
+            Review
+          </a>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#top-picks-header">Top Picks</a></li>
+            <li><a href="#review">Feedbacks</a></li>
+            <li><a href="#contact_me">Contact Me</a></li>
+          </ul>
+          <!-- MOBILE MENU TOGGLE -->
+          <div class="hamburger-menu" id="hamburger-menu">
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END NAV -->
+
+    <!-- HERO SECTION -->
+    <div
+      class="hero-section text-white d-flex justify-content-center align-items-center"
+      id="home"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="hero-context">
+              <h1 class="display-1">
+                Welcome To My <span class="main-color">Website</span>!
+              </h1>
+              <p class="display-7">
+                Where my reviews about movies and tv-series .
+              </p>
+              <div class="btn">
+                <a href="#top-picks-header" class="btn btn-hover">
+                  <i class="bx bx-movie"></i>
+                  <span>My Top Picks!</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF HERO SECTION -->
+
+    <!-- ABOUT ME SECTION -->
+    <div class="container about-section" id="about-me">
+      <div class="about-content row align-items-center">
+        <!-- Text content on the left -->
+        <div class="col-md-6">
+          <h1 class="display-2">About <span class="main-color">Me</span></h1>
+          <p>
+            Hello! My name is Gemma L. Tubigon, and I am a 20-year-old student
+            pursuing a Bachelor of Science in Information System (BSIS). As a
+            dedicated student and avid movie lover, I have always found joy and
+            inspiration in the world of cinema. Movies have been a significant
+            part of my life, offering not just entertainment, but also a lens
+            through which I can explore diverse cultures, ideas, and stories.
+          </p>
+          <p>
+            I created this website because of my deep love for movies and my
+            desire to share my thoughts and insights with others. Through this
+            platform, I aim to delve into the intricate details of filmmaking
+            and foster a community of fellow movie enthusiasts. I believe that
+            movies have the power to connect people and spark meaningful
+            conversations. By sharing my reviews, analyses, and discussions on a
+            wide range of films, I hope to inspire others, provide new
+            perspectives, and create a go-to destination for all things
+            cinematic.
+          </p>
+        </div>
+        <!-- Image on the right -->
+        <div class="about-img-container col-md-6">
+          <img
+            src="images/three.jpg"
+            alt="Profile Image"
+            class="profile-image"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- END OF ABOUT ME SECTION -->
+
+    <!-- TOP PICKS -->
+    <div class="top-picks-container" id="top-picks-container">
+      <div class="top-picks-header">
+        <h1 id="top-picks-header">
+          MY <span class="main-color">TOP</span> PICKS
+        </h1>
+      </div>
+      <!-- TOP 5 MOVIES SECTION -->
+      <div class="section">
+        <div class="container">
+          <div class="section-header">TOP 5 MOVIES</div>
+          <!-- HERO SLIDE -->
+          <div class="hero-slide">
+            <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+              <!-- SLIDE ITEM -->
+              <div class="hero-slide-item">
+                <img src="./images/dam.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                  <div class="item-content-wraper">
+                    <div class="item-content-title top-down">Damsel</div>
+                    <div class="movie-infos top-down delay-2">
+                      <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </div>
+                      <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>HD</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>16+</span>
+                      </div>
+                    </div>
+
+                    <div class="item-content-description top-down delay-4">
+                      <div class="item-header">My Reviews:</div>
+                      "Damsel" rocks! Millie Bobby Brown is awesome as a
+                      princess who fights back. The dragon looked cool, but the
+                      talking wasn't great. Still, fun movie with a strong
+                      female lead!
+                    </div>
+                    <div class="item-action top-down delay-6">
+                      <a href="#" class="btn btn-hover">
+                        <i class="bx bx-chevron-right"></i>
+                        <span>Details</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END SLIDE ITEM -->
+              <!-- SLIDE ITEM -->
+              <div class="hero-slide-item">
+                <img src="./images/my.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                  <div class="item-content-wraper">
+                    <div class="item-content-title top-down">My Name</div>
+                    <div class="movie-infos top-down delay-2">
+                      <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </div>
+                      <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>HD</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>16+</span>
+                      </div>
+                    </div>
+
+                    <div class="item-content-description top-down delay-4">
+                      <div class="item-header">My Reviews:</div>
+                      "Wow! 'My Name' is action-packed! Han So-hee is incredible
+                      as a revenge-fueled woman. If you crave intense fight
+                      scenes and a thrilling mystery, this is your show."
+                    </div>
+                    <div class="item-action top-down delay-6">
+                      <a href="#" class="btn btn-hover">
+                        <i class="bx bx-chevron-right"></i>
+                        <span>Details</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END SLIDE ITEM -->
+              <!-- SLIDE ITEM -->
+              <div class="hero-slide-item">
+                <img src="./images/mid.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                  <div class="item-content-wraper">
+                    <div class="item-content-title top-down">
+                      Midnight Runner
+                    </div>
+                    <div class="movie-infos top-down delay-2">
+                      <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </div>
+                      <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>HD</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>16+</span>
+                      </div>
+                    </div>
+
+                    <div class="item-content-description top-down delay-4">
+                      <div class="item-header">My Reviews:</div>
+                      "Midnight Runners" is a blast! Park Seo-joon and Kang
+                      Ha-neul are hilarious as two mismatched police academy
+                      buddies who stumble upon a huge conspiracy. The action is
+                      exciting, the plot keeps you guessing, and there's enough
+                      humor to keep things light. It's a crowd-pleaser with a
+                      touch of social commentary – perfect for a fun movie
+                      night!
+                    </div>
+                    <div class="item-action top-down delay-6">
+                      <a href="#" class="btn btn-hover">
+                        <i class="bx bx-chevron-right"></i>
+                        <span>Details</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END SLIDE ITEM -->
+              <!-- SLIDE ITEM -->
+
+              <!-- END SLIDE ITEM -->
+              <!-- SLIDE ITEM -->
+              <div class="hero-slide-item">
+                <img src="./images/mi.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                  <div class="item-content-wraper">
+                    <div class="item-content-title top-down">
+                      Miracle Cell No.7
+                    </div>
+                    <div class="movie-infos top-down delay-2">
+                      <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </div>
+                      <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>HD</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>16+</span>
+                      </div>
+                    </div>
+
+                    <div class="item-content-description top-down delay-4">
+                      <div class="item-header">My Reviews:</div>
+
+                      "Miracle in Cell No. 7" is a tearjerker with a
+                      heartwarming twist! This South Korean film tells the story
+                      of a mentally challenged father, wrongly accused of a
+                      crime, who finds a way to connect with his young daughter
+                      even behind bars. Get ready for laughs and tears as the
+                      inmates band together to create a special world for them.
+                      It's a beautiful story about love, friendship, and
+                      fighting for what's right. Just have some tissues handy!
+                    </div>
+                    <div class="item-action top-down delay-6">
+                      <a href="#" class="btn btn-hover">
+                        <i class="bx bx-chevron-right"></i>
+                        <span>Details</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END SLIDE ITEM -->
+              <!-- SLIDE ITEM -->
+
+              <!-- END SLIDE ITEM -->
+              <!-- SLIDE ITEM -->
+              <div class="hero-slide-item">
+                <img src="./images/call.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                  <div class="item-content-wraper">
+                    <div class="item-content-title top-down">Call</div>
+                    <div class="movie-infos top-down delay-2">
+                      <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </div>
+                      <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>HD</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>16+</span>
+                      </div>
+                    </div>
+
+                    <div class="item-content-description top-down delay-4">
+                      <div class="item-header">My Reviews:</div>
+                      "Call" is a mind-bender! Two women from different times
+                      connect through a phone, changing each other's destinies.
+                      It's creepy and suspenseful, but a bit confusing at times.
+                      Still, worth watching if you like time-twists and
+                      mysteries!
+                    </div>
+                    <div class="item-action top-down delay-6">
+                      <a href="#" class="btn btn-hover">
+                        <i class="bx bx-chevron-right"></i>
+                        <span>Details</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END SLIDE ITEM -->
+            </div>
+          </div>
+          <!-- END HERO SLIDE -->
+        </div>
+      </div>
+      <!-- END TOP 5 MOVIES SECTION -->
+      <!-- TOP 5 LATES SECTION -->
+      <div class="section">
+        <div class="container">
+          <div class="section-header">TOP 5 SERIES</div>
+          <!-- HERO SLIDE -->
+          <div class="hero-slide">
+            <div class="owl-carousel carousel-nav-center" id="hero-carousel_2">
+              <!-- SLIDE ITEM -->
+              <div class="hero-slide-item">
+                <img src="./images/un.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                  <div class="item-content-wraper">
+                    <div class="item-content-title top-down">
+                      Uncanny Counter
+                    </div>
+                    <div class="movie-infos top-down delay-2">
+                      <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </div>
+                      <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>HD</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>16+</span>
+                      </div>
+                    </div>
+
+                    <div class="item-content-description top-down delay-4">
+                      <div class="item-header">My Reviews:</div>
+                      "The Uncanny Counter" throws punches and feels! This show
+                      mixes demon-hunting action with a surprising amount of
+                      heart. You'll root for the quirky noodle shop crew as they
+                      battle evil spirits. The fights are cool, the characters
+                      are awesome, but the ending might not be perfect. Still, a
+                      great pick for fans of superhero stories with a Korean
+                      twist.
+                    </div>
+                    <div class="item-action top-down delay-6">
+                      <a href="#" class="btn btn-hover">
+                        <i class="bx bx-chevron-right"></i>
+                        <span>Details</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END SLIDE ITEM -->
+              <!-- SLIDE ITEM -->
+              <div class="hero-slide-item">
+                <img src="./images/shop.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                  <div class="item-content-wraper">
+                    <div class="item-content-title top-down">
+                      A Shop for Killers
+                    </div>
+                    <div class="movie-infos top-down delay-2">
+                      <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </div>
+                      <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>HD</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>16+</span>
+                      </div>
+                    </div>
+
+                    <div class="item-content-description top-down delay-4">
+                      <div class="item-header">My Reviews:</div>
+                      "A Shop for Killers" is a hidden gem! It starts with a
+                      normal girl, then BAM! Assassins and family secrets. I
+                      loved the suspense and guessing who's good and who's bad.
+                      The uncle-niece team is the heart of the show, definitely
+                      worth checking out!
+                    </div>
+                    <div class="item-action top-down delay-6">
+                      <a href="#" class="btn btn-hover">
+                        <i class="bx bx-chevron-right"></i>
+                        <span>Details</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END SLIDE ITEM -->
+              <!-- SLIDE ITEM -->
+              <div class="hero-slide-item">
+                <img src="./images/rings.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                  <div class="item-content-wraper">
+                    <div class="item-content-title top-down">
+                      The Lord of The Rings
+                    </div>
+                    <div class="movie-infos top-down delay-2">
+                      <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </div>
+                      <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>HD</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>16+</span>
+                      </div>
+                    </div>
+
+                    <div class="item-content-description top-down delay-4">
+                      <div class="item-header">My Reviews:</div>
+                      The Lord of the Rings is a classic epic fantasy that takes
+                      you on an unforgettable journey. Frodo, a hobbit, inherits
+                      a magic ring that threatens all of Middle-earth. He joins
+                      a fellowship of hobbits, dwarves, elves, and men on a
+                      perilous quest to destroy the ring and defeat the evil
+                      Dark Lord Sauron. It's full of adventure, memorable
+                      characters, and epic battles. If you haven't experienced
+                      it yet, prepare to be blown away!
+                    </div>
+                    <div class="item-action top-down delay-6">
+                      <a href="#" class="btn btn-hover">
+                        <i class="bx bx-chevron-right"></i>
+                        <span>Details</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END SLIDE ITEM -->
+              <!-- SLIDE ITEM -->
+
+              <!-- END SLIDE ITEM -->
+              <!-- SLIDE ITEM -->
+              <div class="hero-slide-item">
+                <img src="./images/blo.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                  <div class="item-content-wraper">
+                    <div class="item-content-title top-down">Bloodhounds</div>
+                    <div class="movie-infos top-down delay-2">
+                      <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </div>
+                      <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>HD</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>16+</span>
+                      </div>
+                    </div>
+
+                    <div class="item-content-description top-down delay-4">
+                      <div class="item-header">My Reviews:</div>
+                      Show drafts volume_up "Bloodhounds" packs a punch! This
+                      Korean drama throws together two young boxers and a kind
+                      loan shark to fight a cruel loan shark. It's got action,
+                      heart, and some laughs. Just be warned, the second season
+                      isn't out yet, so you might be left hanging!
+                    </div>
+                    <div class="item-action top-down delay-6">
+                      <a href="#" class="btn btn-hover">
+                        <i class="bx bx-chevron-right"></i>
+                        <span>Details</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END SLIDE ITEM -->
+              <!-- SLIDE ITEM -->
+
+              <!-- END SLIDE ITEM -->
+              <!-- SLIDE ITEM -->
+              <div class="hero-slide-item">
+                <img src="./images/hot.jpg" alt="" />
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                  <div class="item-content-wraper">
+                    <div class="item-content-title top-down">
+                      Hotel Del Luna
+                    </div>
+                    <div class="movie-infos top-down delay-2">
+                      <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                      </div>
+                      <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>120 mins</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>HD</span>
+                      </div>
+                      <div class="movie-info">
+                        <span>16+</span>
+                      </div>
+                    </div>
+
+                    <div class="item-content-description top-down delay-4">
+                      <div class="item-header">My Reviews:</div>
+                      "Hotel Del Luna" is stunning! Amazing costumes and special
+                      effects bring the ghost world to life. IU is fantastic as
+                      the lead, but the romance could be stronger. Still, a
+                      must-watch for fans of fantasy with a heartwarming core.
+                    </div>
+                    <div class="item-action top-down delay-6">
+                      <a href="#" class="btn btn-hover">
+                        <i class="bx bx-chevron-right"></i>
+                        <span>Details</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END SLIDE ITEM -->
+            </div>
+          </div>
+          <!-- END HERO SLIDE -->
+        </div>
+      </div>
+      <!-- END TOP 5 LATES SECTION-->
+    </div>
+    <!-- END TOP PICKS -->
+
+    <!-- REVIEWS SECTION -->
+    <section class="feedbacks" id="review">
+      <div class="feedbacks_header">
+        <h1 class="testimonial-heading">
+          Feed<span class="main-color">backs</span>
+        </h1>
+      </div>
+      <div class="rate-me">
+        <h4>Rate Me!</h4>
+        <p>
+          If you have any concerns, suggestions, or compliments about my
+          personal reviews, you can rate me based on the number of stars and
+          leave some comments.
+        </p>
+      </div>
+      <div id="testimonials">
+        <!-- Reviews Container -->
+
+        <div class="reviews_container">
+          <div class="post">
+            <div class="text">Thanks for rating me!</div>
+            <!-- <div class="edit">EDIT</div> -->
+          </div>
+          <div class="reviews">
+            <input type="radio" name="rate" id="rate-5" />
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4" />
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3" />
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2" />
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1" />
+            <label for="rate-1" class="fas fa-star"></label>
+            <form id="commentForm" action="#">
+              <header></header>
+              <div class="name">
+                <textarea cols="10" placeholder="Enter Your Name.."></textarea>
+              </div>
+              <div class="textarea">
+                <textarea
+                  cols="30"
+                  placeholder="Describe your experience.."
+                ></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Post</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End Of Reviews Container -->
+        <!-- Testimonials heading -->
+        <h3 style="padding: 5rem">Comments</h3>
+        <div class="box_comments">
+          <!-- Testimonials box container -->
+          <div class="testimonial-box-container">
+            <!-- Testimonial boxes will be dynamically generated here -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END REVIEWS SECTION -->
+
+    <!-- CONTACT SECTION -->
+    <div class="contact_me" id="contact_me" style="height: 100vh">
+      <div class="contact_header text-center">
+        <h1>Contact <span class="main-color">Me</span></h1>
+      </div>
+      <div
+        class="contact_wrapper d-flex justify-content-center align-items-center"
+        style="height: 100vh"
+      >
+        <div class="contact_container">
+          <div class="top text-center">
+            <h2 class="getTouch">Get In Touch</h2>
+            <div class="top_text">
+              <p>
+                I’d love to hear from you! Whether you have feedback on my movie
+                reviews, suggestions for films to watch, or just want to discuss
+                your favorite movies, feel free to reach out. My inbox is always
+                open.
+              </p>
+            </div>
+          </div>
+          <div class="bottom text-center">
+            <div class="btn">
+              <a
+                href="mailto:gemmatubigon12@gmail.com"
+                class="btn btn-hover"
+                target="_blank"
+              >
+                <i class="bx bx-envelope"></i>
+                <span>Say Hello!</span>
+              </a>
+            </div>
+          </div>
+          <div class="container text-center my-5">
+            <div class="d-flex justify-content-center align-items-center">
+              <span class="line"></span>
+              <span class="or">or</span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="soc_media_container">
+            <div class="social_media">
+              <ul class="social-media">
+                <li>
+                  <a
+                    href="https://www.facebook.com/Gemmatubigon12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bx bxl-facebook"></i>
+                    <span class="sr-only">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:gemmatubigon12@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bx bx-envelope"></i>
+                    <span class="sr-only">Email</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTACT SECTION -->
+
+    <!-- COPYRIGHT SECTION -->
+    <div class="copyright">
+      <a href="#soc_med_link" target="_blank">
+        Created By Gemma Tubigon <i class="bx bx-copyright"></i> 2024</a
+      >
+    </div>
+    <!-- END COPYRIGHT SECTION -->
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- OWL CAROUSEL -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- APP SCRIPT -->
+    <script src="app.js"></script>
+  </body>
+</html>
