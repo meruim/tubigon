@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".nav-menu a");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.forEach((nav) => nav.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+});
+
 $(document).ready(() => {
   $("#hamburger-menu").click(() => {
     $("#hamburger-menu").toggleClass("active");

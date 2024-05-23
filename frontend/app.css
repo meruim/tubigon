@@ -73,6 +73,9 @@ img {
 .nav a {
   color: var(--text-color);
 }
+.nav a.active {
+  color: var(--main-color);
+}
 
 .logo {
   font-size: 2rem;
